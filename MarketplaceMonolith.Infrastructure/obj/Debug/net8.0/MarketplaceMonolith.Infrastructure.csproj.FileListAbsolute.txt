@@ -1,0 +1,14 @@
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.csproj.AssemblyReference.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.AssemblyInfoInputs.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.AssemblyInfo.cs
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.csproj.CoreCompileInputs.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\bin\Debug\net8.0\MarketplaceMonolith.Infrastructure.deps.json
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\bin\Debug\net8.0\MarketplaceMonolith.Infrastructure.runtimeconfig.json
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\bin\Debug\net8.0\MarketplaceMonolith.Infrastructure.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\bin\Debug\net8.0\MarketplaceMonolith.Infrastructure.pdb
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\refint\MarketplaceMonolith.Infrastructure.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.pdb
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.genruntimeconfig.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\ref\MarketplaceMonolith.Infrastructure.dll

@@ -1,0 +1,15 @@
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.csproj.AssemblyReference.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.AssemblyInfoInputs.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.AssemblyInfo.cs
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.csproj.CoreCompileInputs.cache
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\bin\Debug\net8.0\MarketplaceMonolith.Core.deps.json
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\bin\Debug\net8.0\MarketplaceMonolith.Core.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\bin\Debug\net8.0\MarketplaceMonolith.Core.pdb
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\bin\Debug\net8.0\MarketplaceMonolith.Infrastructure.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\bin\Debug\net8.0\MarketplaceMonolith.Infrastructure.pdb
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\Marketpl.CFA89E23.Up2Date
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\refint\MarketplaceMonolith.Core.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\MarketplaceMonolith.Core.pdb
+D:\MarketplaceMonolith\MarketplaceMonolith.Core\obj\Debug\net8.0\ref\MarketplaceMonolith.Core.dll

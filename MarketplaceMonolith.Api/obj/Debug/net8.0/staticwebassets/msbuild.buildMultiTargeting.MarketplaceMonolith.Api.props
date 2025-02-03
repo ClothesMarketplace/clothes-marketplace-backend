@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MarketplaceMonolith.Api.props" />
+</Project>
