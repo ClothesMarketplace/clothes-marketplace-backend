@@ -10,16 +10,18 @@
     <PackageReference Include="Asp.Versioning.Http" Version="8.1.0" />
     <PackageReference Include="Asp.Versioning.Mvc" Version="8.1.0" />
     <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.12">
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.8" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Marketplace.Shared\Marketplace.Shared.csproj" />
     <ProjectReference Include="..\MarketplaceMonolith.Core\MarketplaceMonolith.Core.csproj" />
     <ProjectReference Include="..\MarketplaceMonolith.Infrastructure\MarketplaceMonolith.Infrastructure.csproj" />
   </ItemGroup>

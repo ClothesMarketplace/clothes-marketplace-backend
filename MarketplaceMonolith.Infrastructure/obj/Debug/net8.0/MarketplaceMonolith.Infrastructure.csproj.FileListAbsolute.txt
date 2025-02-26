@@ -12,3 +12,7 @@ D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\refin
 D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.pdb
 D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.genruntimeconfig.cache
 D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\ref\MarketplaceMonolith.Infrastructure.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\MarketplaceMonolith.Infrastructure.sourcelink.json
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\bin\Debug\net8.0\Marketplace.Shared.dll
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\bin\Debug\net8.0\Marketplace.Shared.pdb
+D:\MarketplaceMonolith\MarketplaceMonolith.Infrastructure\obj\Debug\net8.0\Marketpl.03AEC022.Up2Date

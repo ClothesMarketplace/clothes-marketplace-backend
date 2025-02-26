@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
+using Marketplace.Shared.DTO.User;
 using MarketplaceMonolith.Infrastructure.Repository;
 
 namespace MarketplaceMonolith.Core.Services
@@ -10,15 +7,19 @@ namespace MarketplaceMonolith.Core.Services
     public class UserService
     {
         private readonly UserRepository _userRepository;
+        private readonly IMapper _mapper;
 
-        public UserService(UserRepository userRepository)
+        public UserService(UserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
-        public async Task<string> getUserName()
+        public async Task<UserDTO> getUser(Guid userId)
         {
-            return await _userRepository.getUserName();
+            var user = await _userRepository.getUser(userId);
+
+            return _mapper.Map<UserDTO>(user);
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using MarketplaceMonolith.Api.Models;
+﻿using MarketplaceMonolith.Infrastructure.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace MarketplaceMonolith.Api.Data
