@@ -1,16 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MarketplaceMonolith.Api.Data;
+using MarketplaceMonolith.Infrastructure.Models;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace MarketplaceMonolith.Infrastructure.Repository
 {
-    public class UserRepository
+    public class UserRepository : IUserRepository
     {
-        public async Task<string> getUserName()
+        private readonly DataContext _dataContext;
+
+        public UserRepository(DataContext dataContext)
         {
-            return await Task.FromResult("UserName");
+            _dataContext = dataContext;
+        }
+
+        public async Task<UserModel> getUser(Guid userId)
+        {
+            var user = await _dataContext.ApplicationUser.FirstOrDefaultAsync(x => x.Id == userId);
+            if (user == null)
+            {
+                throw new KeyNotFoundException($"User with ID {userId} not found.");
+            }
+            return user;
         }
     }
 }

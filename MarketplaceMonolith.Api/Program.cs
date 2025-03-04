@@ -1,6 +1,7 @@
 using MarketplaceMonolith.Api.Data;
 using Microsoft.EntityFrameworkCore;
 using MarketplaceMonolith.Infrastructure.Repository;
+using MarketplaceMonolith.Core.Mapper;
 using MarketplaceMonolith.Core.Services;
 using Asp.Versioning;
 
@@ -11,6 +12,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 builder.Services.AddApiVersioning(options =>
 {
@@ -33,7 +35,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseMySQL(connectionString, b => b.MigrationsAssembly("MarketplaceMonolith.Infrastructure"))
+    options.UseNpgsql(connectionString, b => b.MigrationsAssembly("MarketplaceMonolith.Infrastructure"))
 );
 
 //repositories
@@ -41,6 +43,9 @@ builder.Services.AddScoped<UserRepository>();
 
 //services
 builder.Services.AddScoped<UserService>();
+
+builder.Services.AddAutoMapper(typeof(ProfileMapper));
+
 
 var app = builder.Build();
 

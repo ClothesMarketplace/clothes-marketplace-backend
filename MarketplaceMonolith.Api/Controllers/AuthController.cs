@@ -2,6 +2,7 @@
 using MarketplaceMonolith.Core.Services;
 using Microsoft.AspNetCore.Mvc;
 
+
 namespace MarketplaceMonolith.Api.Controllers
 {
     [ApiVersion("1.0")]
@@ -18,16 +19,16 @@ namespace MarketplaceMonolith.Api.Controllers
 
         [ApiVersion("1.0")]
         [HttpGet("/getUserName")]
-        public async Task<ActionResult> apiTest()
+        public async Task<ActionResult> apiTest(Guid userId)
         {
-            var userName = await _userService.getUserName();
+            var user = await _userService.getUser(userId);
 
-            if (userName == null)
+            if (user == null)
             {
                 return NotFound(new { error = "Name was not found." });
             }
 
-            return Ok(new { userName });
+            return Ok(new { user });
         }
     }
 }

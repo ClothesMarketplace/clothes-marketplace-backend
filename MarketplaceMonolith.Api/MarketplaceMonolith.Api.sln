@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceMonolith.Api", "MarketplaceMonolith.Api.csproj", "{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketplaceMonolith.Api", "MarketplaceMonolith.Api.csproj", "{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceMonolith.Core", "..\MarketplaceMonolith.Core\MarketplaceMonolith.Core.csproj", "{89AB14F7-456B-47C9-A9BE-B960301249A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketplaceMonolith.Core", "..\MarketplaceMonolith.Core\MarketplaceMonolith.Core.csproj", "{89AB14F7-456B-47C9-A9BE-B960301249A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceMonolith.Infrastructure", "..\MarketplaceMonolith.Infrastructure\MarketplaceMonolith.Infrastructure.csproj", "{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketplaceMonolith.Infrastructure", "..\MarketplaceMonolith.Infrastructure\MarketplaceMonolith.Infrastructure.csproj", "{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marketplace.Shared", "..\Marketplace.Shared\Marketplace.Shared.csproj", "{A5D0FE3B-C97D-4A4F-8194-3834327971B8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5D0FE3B-C97D-4A4F-8194-3834327971B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5D0FE3B-C97D-4A4F-8194-3834327971B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5D0FE3B-C97D-4A4F-8194-3834327971B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5D0FE3B-C97D-4A4F-8194-3834327971B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
