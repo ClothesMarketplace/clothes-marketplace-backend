@@ -2,7 +2,9 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 WORKDIR /app
 
-COPY *.sln ./
+COPY MarketplaceMonolith/MarketplaceMonolith.Api*.sln ./
+
+RUN dotnet restore MarketplaceMonolith.Api/MarketplaceMonolith.Api.sln
 
 COPY MarketplaceMonolith.Api/*.csproj MarketplaceMonolith.Api/
 COPY MarketplaceMonolith.Core/*.csproj MarketplaceMonolith.Core/
