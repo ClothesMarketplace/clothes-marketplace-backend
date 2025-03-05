@@ -1,9 +1,9 @@
-# Використовуємо офіційний .NET SDK образ для збирання додатка
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+
 WORKDIR /app
 
-# Копіюємо файли рішення та відновлюємо залежності
 COPY *.sln ./
+
 COPY MarketplaceMonolith.Api/*.csproj MarketplaceMonolith.Api/
 COPY MarketplaceMonolith.Core/*.csproj MarketplaceMonolith.Core/
 COPY MarketplaceMonolith.Infrastructure/*.csproj MarketplaceMonolith.Infrastructure/
@@ -11,22 +11,18 @@ COPY Marketplace.Shared/*.csproj Marketplace.Shared/
 
 RUN dotnet restore
 
-# Копіюємо весь код
-COPY . ./
+COPY . .
 
-# Будуємо додаток
-RUN dotnet publish MarketplaceMonolith.Api/MarketplaceMonolith.Api.csproj -c Release -o /publish
+RUN dotnet build -c Release --no-restore
 
-# Використовуємо легкий образ для виконання додатка
+RUN dotnet publish MarketplaceMonolith.Api/MarketplaceMonolith.Api.csproj -c Release -o /app/publish --no-build
+
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+
 WORKDIR /app
 
-# Копіюємо опубліковані файли
-COPY --from=build /publish .
+COPY --from=build /app/publish .
 
-# Вказуємо порт, який використовує API
-EXPOSE 5000
-EXPOSE 5001
+EXPOSE 80
 
-# Запускаємо API
 ENTRYPOINT ["dotnet", "MarketplaceMonolith.Api.dll"]
