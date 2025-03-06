@@ -35,7 +35,17 @@ namespace MarketplaceMonolith.Core.Services.User
 
         public async Task<OperationResult> Registration(RegistrationRequest registrationRequest)
         {
-            return await _userRepository.Registration(registrationRequest);
+            var result = await _userRepository.Registration(registrationRequest);
+
+            if (result.Success)
+            {
+                var token = _jwtService.GenerateToken(result.Message, registrationRequest.Email);
+
+                return OperationResult.Ok(token);
+            }
+
+            return result;
         }
+
     }
 }

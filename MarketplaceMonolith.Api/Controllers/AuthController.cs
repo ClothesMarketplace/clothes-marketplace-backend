@@ -1,5 +1,6 @@
 ﻿using Asp.Versioning;
-using MarketplaceMonolith.Core.Services;
+using Marketplace.Shared.DTO.User;
+using MarketplaceMonolith.Core.Services.User;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -18,17 +19,31 @@ namespace MarketplaceMonolith.Api.Controllers
         }
 
         [ApiVersion("1.0")]
-        [HttpGet("/getUserName")]
-        public async Task<ActionResult> apiTest(Guid userId)
+        [HttpPost("Login")]
+        public async Task<ActionResult> Login(LoginRequest loginRequest)
         {
-            var user = await _userService.getUser(userId);
+            var result = await _userService.Login(loginRequest);
 
-            if (user == null)
+            if(result.Success)
             {
-                return NotFound(new { error = "Name was not found." });
+                return Ok(new {token = result.Message});
             }
 
-            return Ok(new { user });
+            return BadRequest(new {error = result.Message});
+        }
+
+        [ApiVersion("1.0")]
+        [HttpPost("Registration")]
+        public async Task<ActionResult> Registration(RegistrationRequest registrationRequest)
+        {
+            var result = await _userService.Registration(registrationRequest);
+
+            if (result.Success)
+            {
+                return Ok(new { token = result.Message });
+            }
+
+            return BadRequest(new { error = result.Message });
         }
     }
 }

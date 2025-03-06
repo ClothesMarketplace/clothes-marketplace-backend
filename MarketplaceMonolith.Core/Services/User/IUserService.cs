@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarketplaceMonolith.Core.Services.User
 {
-    internal interface IUserService
+    public interface IUserService
     {
         Task<OperationResult> Registration(RegistrationRequest registrationRequest);
         Task<OperationResult> Login(LoginRequest loginRequest);

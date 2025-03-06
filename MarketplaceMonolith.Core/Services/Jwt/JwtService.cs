@@ -24,12 +24,16 @@ namespace MarketplaceMonolith.Core.Services.Jwt
             var jwtSettings = _configuration.GetSection("JwtSettings");
             var secretKey = Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]!);
 
-            var claims = new[]
+            var claims = new List<Claim>();
+
+            if (!string.IsNullOrEmpty(userId))
             {
-            new Claim(JwtRegisteredClaimNames.Sub, userId),
-            new Claim(JwtRegisteredClaimNames.Email, email),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-        };
+                claims.Add(new Claim(JwtRegisteredClaimNames.Sub, userId));
+            }
+
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, email));
+
+            claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
 
             var key = new SymmetricSecurityKey(secretKey);
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -45,5 +49,6 @@ namespace MarketplaceMonolith.Core.Services.Jwt
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
     }
 }

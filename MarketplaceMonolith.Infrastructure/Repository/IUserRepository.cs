@@ -1,4 +1,6 @@
-﻿using MarketplaceMonolith.Infrastructure.Models;
+﻿using Marketplace.Shared.DTO.AuthResults;
+using Marketplace.Shared.DTO.User;
+using MarketplaceMonolith.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +11,7 @@ namespace MarketplaceMonolith.Infrastructure.Repository
 {
     internal interface IUserRepository
     {
-        Task<UserModel> getUser(Guid userId);
+        Task<OperationResult> Login(LoginRequest loginRequest);
+        Task<OperationResult> Registration(RegistrationRequest registrationRequest);
     }
 }
