@@ -1,18 +1,38 @@
 using MarketplaceMonolith.Api.Data;
 using Microsoft.EntityFrameworkCore;
-using MarketplaceMonolith.Infrastructure.Repository;
 using MarketplaceMonolith.Core.Mapper;
-using MarketplaceMonolith.Core.Services;
 using Asp.Versioning;
-
+using MarketplaceMonolith.Infrastructure.Repository.User;
+using MarketplaceMonolith.Core.Services.User;
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using MarketplaceMonolith.Core.Services.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
-
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+var secretKey = Encoding.UTF8.GetBytes(jwtSettings["SecretKey"]!);
+
+builder.Services
+    .AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = jwtSettings["Issuer"],
+            ValidAudience = jwtSettings["Audience"],
+            IssuerSigningKey = new SymmetricSecurityKey(secretKey)
+        };
+    });
 
 builder.Services.AddApiVersioning(options =>
 {
@@ -43,11 +63,15 @@ builder.Services.AddScoped<UserRepository>();
 
 //services
 builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<JwtService>();
 
 builder.Services.AddAutoMapper(typeof(ProfileMapper));
 
 
 var app = builder.Build();
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+app.Urls.Add($"http://*:{port}");
 
 if (app.Environment.IsDevelopment())
 {
