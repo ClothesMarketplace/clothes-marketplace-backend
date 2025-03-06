@@ -1,3 +1,4 @@
+
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 WORKDIR /app
@@ -9,7 +10,7 @@ WORKDIR /app/MarketplaceMonolith.Api
 
 RUN dotnet restore MarketplaceMonolith.Api.sln  
 
-RUN dotnet build -c Release --no-restore
+RUN dotnet build MarketplaceMonolith.Api.sln -c Release --no-restore
 
 RUN dotnet publish MarketplaceMonolith.Api.csproj -c Release -o /app/publish --no-build
 
