@@ -19,6 +19,13 @@ namespace MarketplaceMonolith.Infrastructure.Repository.User
             _passwordHasher = new PasswordHasher<UserModel>();
         }
 
+        public async Task<UserModel> GetUserById(string id)
+        {
+            var user = await _dataContext.ApplicationUser.FirstOrDefaultAsync(x => x.Id == Guid.Parse(id));
+
+            return user;
+        }
+
         public async Task<OperationResult> Login(LoginRequest loginRequest)
         {
             var user = await _dataContext.ApplicationUser.FirstOrDefaultAsync(x => x.Email == loginRequest.Email);

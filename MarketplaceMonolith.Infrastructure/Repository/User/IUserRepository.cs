@@ -13,5 +13,6 @@ namespace MarketplaceMonolith.Infrastructure.Repository.User
     {
         Task<OperationResult> Registration(RegistrationRequest registrationRequest);
         Task<OperationResult> Login(LoginRequest loginRequest);
+        Task<UserModel> GetUserById(string id);
     }
 }

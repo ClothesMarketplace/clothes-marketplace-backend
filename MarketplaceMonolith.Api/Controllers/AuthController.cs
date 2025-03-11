@@ -26,7 +26,7 @@ namespace MarketplaceMonolith.Api.Controllers
 
             if(result.Success)
             {
-                return Ok(new {token = result.Message});
+                return Ok(new {token = result.Message, user = result.User });
             }
 
             return BadRequest(new {error = result.Message});
@@ -40,7 +40,7 @@ namespace MarketplaceMonolith.Api.Controllers
 
             if (result.Success)
             {
-                return Ok(new { token = result.Message });
+                return Ok(new { token = result.Message, user = result.User });
             }
 
             return BadRequest(new { error = result.Message });
