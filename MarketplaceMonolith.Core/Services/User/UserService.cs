@@ -27,7 +27,11 @@ namespace MarketplaceMonolith.Core.Services.User
             {
                 var token = _jwtService.GenerateToken(result.Message, loginRequest.Email);
 
-                return OperationResult.Ok(token);
+                var user = await _userRepository.GetUserById(result.Message);
+
+                var userDto = _mapper.Map<UserDTO>(user);
+
+                return OperationResult.Ok(token, userDto);
             }
 
             return result;
@@ -41,7 +45,11 @@ namespace MarketplaceMonolith.Core.Services.User
             {
                 var token = _jwtService.GenerateToken(result.Message, registrationRequest.Email);
 
-                return OperationResult.Ok(token);
+                var user = await _userRepository.GetUserById(result.Message);
+
+                var userDto = _mapper.Map<UserDTO>(user);
+
+                return OperationResult.Ok(token, userDto);
             }
 
             return result;
