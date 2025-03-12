@@ -66,7 +66,7 @@ namespace MarketplaceMonolith.Infrastructure.Repository.User
                 await _dataContext.ApplicationUser.AddAsync(newUser);
                 await _dataContext.SaveChangesAsync();
 
-                return OperationResult.Ok();
+                return OperationResult.Ok(newUser.Id.ToString());
             }
 
             return OperationResult.Fail("User with this email already exist");
