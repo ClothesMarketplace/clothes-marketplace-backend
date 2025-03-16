@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MarketplaceMonolith.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+974c3e4a4ed4f4786d23a67fb8e6209c68ed17a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ed3f9d79b1faeacdb383712f9a52208255d6a8a0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MarketplaceMonolith.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MarketplaceMonolith.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

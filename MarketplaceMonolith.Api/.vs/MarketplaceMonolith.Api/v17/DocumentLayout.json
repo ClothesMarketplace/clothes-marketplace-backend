@@ -3,33 +3,31 @@
   "WorkspaceRootPath": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A5D0FE3B-C97D-4A4F-8194-3834327971B8}|..\\Marketplace.Shared\\Marketplace.Shared.csproj|d:\\marketplacemonolith\\marketplace.shared\\dto\\requestresult\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}|MarketplaceMonolith.Api.csproj|d:\\marketplacemonolith\\marketplacemonolith.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}|MarketplaceMonolith.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89AB14F7-456B-47C9-A9BE-B960301249A6}|..\\MarketplaceMonolith.Core\\MarketplaceMonolith.Core.csproj|d:\\marketplacemonolith\\marketplacemonolith.core\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}|..\\MarketplaceMonolith.Infrastructure\\MarketplaceMonolith.Infrastructure.csproj|d:\\marketplacemonolith\\marketplacemonolith.infrastructure\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}|MarketplaceMonolith.Api.csproj|d:\\marketplacemonolith\\marketplacemonolith.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}|MarketplaceMonolith.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}|..\\MarketplaceMonolith.Infrastructure\\MarketplaceMonolith.Infrastructure.csproj|d:\\marketplacemonolith\\marketplacemonolith.infrastructure\\repository\\user\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{89AB14F7-456B-47C9-A9BE-B960301249A6}|..\\MarketplaceMonolith.Core\\MarketplaceMonolith.Core.csproj|d:\\marketplacemonolith\\marketplacemonolith.core\\mapper\\profilemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{89AB14F7-456B-47C9-A9BE-B960301249A6}|..\\MarketplaceMonolith.Core\\MarketplaceMonolith.Core.csproj|d:\\marketplacemonolith\\marketplacemonolith.core\\services\\user\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}|..\\MarketplaceMonolith.Infrastructure\\MarketplaceMonolith.Infrastructure.csproj|d:\\marketplacemonolith\\marketplacemonolith.infrastructure\\models\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A5D0FE3B-C97D-4A4F-8194-3834327971B8}|..\\Marketplace.Shared\\Marketplace.Shared.csproj|d:\\marketplacemonolith\\marketplace.shared\\dto\\user\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}|MarketplaceMonolith.Api.csproj|d:\\marketplacemonolith\\marketplacemonolith.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{354C1F60-2ACA-43E1-B73F-3354F11D4DB6}|MarketplaceMonolith.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A5D0FE3B-C97D-4A4F-8194-3834327971B8}|..\\Marketplace.Shared\\Marketplace.Shared.csproj|d:\\marketplacemonolith\\marketplace.shared\\dto\\requestresult\\operationresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C46F1CB-D12F-42DB-93D9-B5FF556C317A}|..\\MarketplaceMonolith.Infrastructure\\MarketplaceMonolith.Infrastructure.csproj|d:\\marketplacemonolith\\marketplacemonolith.infrastructure\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,93 +37,77 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileMapper.cs",
-              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Core\\Mapper\\ProfileMapper.cs",
-              "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Core\\Mapper\\ProfileMapper.cs",
-              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Core\\Mapper\\ProfileMapper.cs",
-              "RelativeToolTip": "..\\MarketplaceMonolith.Core\\Mapper\\ProfileMapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T18:23:05.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
-              "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
-              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
-              "RelativeToolTip": "..\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAIA5wBkAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T18:21:45.296Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAFAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:18:59.626Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "D:\\MarketplaceMonolith\\Marketplace.Shared\\DTO\\User\\UserDTO.cs",
-              "RelativeDocumentMoniker": "..\\Marketplace.Shared\\DTO\\User\\UserDTO.cs",
-              "ToolTip": "D:\\MarketplaceMonolith\\Marketplace.Shared\\DTO\\User\\UserDTO.cs",
-              "RelativeToolTip": "..\\Marketplace.Shared\\DTO\\User\\UserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:07:38.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "OperationResult.cs",
               "DocumentMoniker": "D:\\MarketplaceMonolith\\Marketplace.Shared\\DTO\\RequestResult\\OperationResult.cs",
               "RelativeDocumentMoniker": "..\\Marketplace.Shared\\DTO\\RequestResult\\OperationResult.cs",
               "ToolTip": "D:\\MarketplaceMonolith\\Marketplace.Shared\\DTO\\RequestResult\\OperationResult.cs",
               "RelativeToolTip": "..\\Marketplace.Shared\\DTO\\RequestResult\\OperationResult.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAACOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:06:39.694Z",
+              "WhenOpened": "2025-03-16T08:15:55.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-14T18:07:56.176Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
-              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
-              "RelativeToolTip": "..\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwB0AAAAgAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAEIAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T17:00:32.044Z",
+              "WhenOpened": "2025-03-12T07:20:14.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
+              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
+              "RelativeToolTip": "..\\MarketplaceMonolith.Infrastructure\\Repository\\User\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T18:21:45.296Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
+              "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
+              "ToolTip": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
+              "RelativeToolTip": "..\\MarketplaceMonolith.Core\\Services\\User\\UserService.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwB0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-11T17:00:32.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "UserModel.cs",
               "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Infrastructure\\Models\\UserModel.cs",
               "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Infrastructure\\Models\\UserModel.cs",
@@ -133,12 +115,11 @@
               "RelativeToolTip": "..\\MarketplaceMonolith.Infrastructure\\Models\\UserModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-11T16:55:14.529Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T16:55:14.529Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "DataContext.cs",
               "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Infrastructure\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "..\\MarketplaceMonolith.Infrastructure\\Data\\DataContext.cs",
@@ -146,12 +127,11 @@
               "RelativeToolTip": "..\\MarketplaceMonolith.Infrastructure\\Data\\DataContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T18:48:22.235Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T18:48:22.235Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\MarketplaceMonolith\\MarketplaceMonolith.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
@@ -159,8 +139,7 @@
               "RelativeToolTip": "Controllers\\AuthController.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAQwCoAAABKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T15:55:07.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T15:55:07.434Z"
             }
           ]
         }
